@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=divice-widdth, initial-scale=1.0">
+
+<title>Add Rule - Rule Engine</title>
+<style>
+	body{
+		font-family: Arial, sans-serif;
+		background-color: #f4f4f4;
+		padding: 20px;
+	}
+	form{
+		background: #ffffff;
+		padding: 15px;
+		border-radius: 5px;
+		box-shadow: 0 0 10 rgba(0,0,0,0.1);
+	}
+	input, button{
+		padding: 8px;
+		margin: 5px;
+		display: block;
+		width: 100%;
+	}
+	button{
+		background-color: #5cb85c;
+		color: white;
+		border: none;
+	}
+</style>
+</head>
+<body>
+	<h2>Add Rule</h2>
+	<form action="/api/rules" method="post">
+		<label>Rule Expression (e.g, age > 25 && income > 50000)</label><br>
+		<input type="text" name="ruleExpression" required>
+		<button type="submit">Add Rule</button>
+	</form>
+</body>
+</html>

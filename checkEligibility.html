@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=divice-widdth, initial-scale=1.0">
+
+<title>Check Eligibility - Rule Engine</title>
+<style>
+	body{
+		font-family: Arial, sans-serif;
+		background-color: #f4f4f4;
+		padding: 20px;
+	}
+	form{
+		background: #ffffff;
+		padding: 15px;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	}
+	input, button{
+		padding: 8px;
+		margin: 5px;
+		display: block;
+		width: 100%;
+	}
+	button{
+		background-color: #5cb85c;
+		color: white;
+		border: none;
+	}
+</style>
+</head>
+<body>
+	<h2>Check User Eligibility</h2>
+	<form action="/api/check-eligibility" method="get">
+	<label>User Id:</label><input type="number" name="userId" required><br>
+	<button type="submit">Check Eligibility</button>		
+	</form>
+</body>
+</html>
